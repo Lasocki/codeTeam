@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Futura-Lig';
+    src: url('font/Futura-Lig.eot'); /* IE9 Compat Modes */
+    src: url('font/Futura-Lig.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('font/Futura-Lig.woff') format('woff'), /* Pretty Modern Browsers */
+         url('font/Futura-Lig.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('font/Futura-Lig.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Futura-Med';
+    src: url('font/Futura-Med.eot'); /* IE9 Compat Modes */
+    src: url('font/Futura-Med.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('font/Futura-Med.woff') format('woff'), /* Pretty Modern Browsers */
+         url('font/Futura-Med.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('font/Futura-Med.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Futura-Dem';
+    src: url('font/Futura-Dem.eot'); /* IE9 Compat Modes */
+    src: url('font/Futura-Dem.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('font/Futura-Dem.woff') format('woff'), /* Pretty Modern Browsers */
+         url('font/Futura-Dem.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('font/Futura-Dem.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Futura-Bol';
+    src: url('font/Futura-Bol.eot'); /* IE9 Compat Modes */
+    src: url('font/Futura-Bol.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('font/Futura-Bol.woff') format('woff'), /* Pretty Modern Browsers */
+         url('font/Futura-Bol.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('font/Futura-Bol.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    font-family: "Futura-Lig" !important;
+}
+
+b {
+    font-family: "Futura-Bol" !important;
+    font-weight: 400 !important;
+}
+
+.sygnet {
+    width:72px;
+}
+
+#menu a{
+    color:#bbb;
+}
+
+#top {
+    min-height:130px;
+}
+
+.homeBackground {
+    background: url('img/home.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 950px;
+}
+
+.homeLogo {
+    width:50%;
+}
+
+.homeBackgroundText {
+    width:70%;
+    min-height:285px;
+    background: #85a3e1;
+    margin-bottom:-50px;
+}
+
+.homeBackgroundText h1 {
+    color:#fff;
+    font-size:2rem;
+    font-family:"Futura-Med" !important;
+    font-weight: 400;
+}
+
+.arrowDown {
+    width:12px;
+}
+
+.arrowRight {
+    width:18px;
+    display: flex;
+    align-self: center;
+}
+
+.buttonRounded {
+    background: #3266cc;
+    border-radius:50px;
+    font-size:0.9rem;
+    font-family: "Futura-Med" !important;
+    padding:15px 70px 15px 20px;
+    color:#fff;
+    -webkit-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    -moz-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    text-transform: uppercase;
+}
+
+.btnTxt {
+    padding-top:3px;
+}
+
+.bluePrimaryTxt {
+    color: #3266cc !important;
+}
+
+.buttonRounded:hover {
+    text-decoration: none;
+    color:#fff;
+}
+
+/* Expierience */
+
+.dotsBg {
+    right:0;
+    margin-top:-250px;
+}
+
+.expierienceSection {
+    margin-top:50px;
+    min-height: 550px;
+}
+
+.expIcon {
+    width:80%;
+}
+
+.expierienceTxt {
+    font-size:1.2rem;
+    color:#7f8289;
+}
+/*  */
+
+.bgLeftOffer {
+    background-color: #3266cc;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.offerSection {
+    min-height: 480px;
+    width:100%;
+}
+
+.offerBackground {
+    background: url(img/offer_bg.png) no-repeat left top;
+    background-size: 100%;
+    min-height: 480px;
+    z-index:2;
+}
+
+/* Team */
+
+.teamSection {
+    min-height: 580px;
+}
+
+
+.profilePhoto {
+    width:145px;
+    height:145px;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.teamName {
+    font-size:1.6rem;
+    font-family: "Futura-Bol" !important;
+    text-transform: uppercase;
+}
+
+.teamRole {
+    font-size:1.2rem;
+
+}
+
+.stopka {
+    background:#e5e5e5;
+    min-height:209px;
+    color:#7f8289;
+}
+
+.footerCompany {
+    color:#000;
+    font-family: "Futura-Dem" !important;
+    font-size:1.1rem;
+}
+
+
+.stopka a {
+    color:#fff;
+    font-size:1.3rem;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    height: 100%;
+    display:flex !important;
+}
+
+nav ul {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+nav li a {
+    color: #A5A9B1;
+    text-decoration: none;
+    padding: 11px 30px;
+    font-family: "Futura-Dem" !important;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+nav li a:hover {
+    color: #3266cc !important;
+    text-decoration: none;
+}
+nav li a span {
+    width: 25px;
+    margin: 0 auto;
+}
+nav li a:hover:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #85a3df 10px;
+    top: -53px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    width: 0;
+}
+
+.primaryBg {
+    background-color: #3266cc !important;
+}
+
+@media (max-width: 1366px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .container-fluid {
+        padding: 0 !important;
+    }
+    .homeBackground {
+        background: url('img/home.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    
+    .homeLogo {
+        width:70%;
+    }
+    
+    .homeBackgroundText {
+        width:100%;
+        min-height:285px;
+        background: #85a3e1;
+        margin-bottom:-50px;
+    }
+    
+    .homeBackgroundText h1 {
+        color:#fff;
+        font-size:2rem;
+        font-family:"Futura-Med" !important;
+        font-weight: 400;
+    }
+    
+    .arrowDown {
+        width:40px;
+    }
+
+    .expierienceSection {
+        margin-top:50px;
+        min-height: auto;
+    }
+
+    .buttonRounded{
+        width:100%;
+        padding:20px 25px;
+    }
+
+    .offerSection {
+        min-height: auto;
+    }
+    
+    .offerBackground {
+        background: url(img/offer_bg.png) no-repeat center center;
+        background-size: cover;
+    }
+    .stopka {
+        min-height:auto;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 414px) {
+    
+}
