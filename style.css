@@ -48,6 +48,10 @@ h1.pageName {
     font-family:"Futura-Dem"!important;
 }
 
+h2 {
+    font-size:1.5rem !important;
+}
+
 span.pageTxt {
     font-size:1.2rem;
 }
@@ -122,6 +126,10 @@ span.pageTxt {
 .grayTxt {
     color:#7f8289 !important;
     font-size:1.2rem;
+}
+
+.secondaryTxt {
+    color:#7f8289 !important;
 }
 
 .buttonRounded:hover {
@@ -200,6 +208,7 @@ span.pageTxt {
     background:#e5e5e5;
     min-height:209px;
     color:#7f8289;
+    overflow:hidden;
 }
 
 .footerCompany {
@@ -212,6 +221,10 @@ span.pageTxt {
 .stopka a {
     color:#fff;
     font-size:1.3rem;
+}
+
+.footerMail {
+    /* margin-right:-168px; */
 }
 
 /* Navigation */
@@ -323,7 +336,117 @@ ul.offerList {
     box-shadow: 0px 15px 15px -5px rgba(0,0,0,0.5);
   }
 
+    /*  */
+    /* About us */
+    /*  */
 
+    .bgLayerPage1 {
+        background:#3266cc;
+        width:35%;
+        height:100%;
+    }
+
+    .bgLayerPage2 {
+        width:32%;
+        height: 100%;
+        background: #3266cc;
+        clip-path: polygon(100% 100%, 0% 100%, 0 0);
+    }
+    
+    .bgLayerPage3 {
+        align-self:flex-end;
+        width:33%;
+        height: 70%;
+        background: #AEC9FF;
+        clip-path: polygon(100% 100%, 100% 0, 0 100%);
+    }
+
+    .aboutUsPageBackground {
+        background: url('img/onas.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 950px;
+        color:#fff;
+    }
+    
+
+    /*  */
+    /* Team */
+    /*  */
+
+    .teamPersonBox {
+        min-height:588px;
+        border-top:1px solid #cccccc;
+        border-bottom:1px solid #cccccc;
+    }
+
+    .teamPersonPhoto {
+        width:420px;
+    }
+
+    .teamWatermark {
+        left:0;
+    }
+
+    /*  */
+    /* Experience page */
+    /*  */
+
+    .experiencePageBackground {
+        background: url('img/doswiadczenie.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 950px;
+        color:#fff;
+    }
+
+    .experiencePageBackgroundBox{
+        min-height:622px;
+        color:#7E828A;
+        border-left:1px solid #fff;
+        font-size:1.2rem;
+        line-height: 2rem;
+    
+    }
+
+    .experienceWatermark {
+        right:0;
+    }
+
+    .progressBox {
+        height:4px;
+        width:100%;
+        background: #AEC9FF;
+    }
+
+    .progressLine {
+        height:4px;
+        width:30%;
+        background: #3266cc;
+    }
+
+    .sliderNumber {
+        font-size:2rem;
+    }
+
+     /*  */
+    /* Contact */
+    /*  */
+
+    .contactPageBox {
+        min-height:550px;
+    }
+
+    a.mailContact {
+        font-size:2.5rem;
+        font-family: "Futura-Bol" !important;
+        color:#3366CC;
+    }
+
+    .formBox {
+        background:#fff;
+        width:100%;
+        box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    
 @media (max-width: 1366px) {
     
 }
@@ -437,6 +560,63 @@ ul.offerList {
     span.categoryTxt {
         font-size:1.2rem;
     }
+
+     /*  */
+    /* About us */
+    /*  */
+
+    .aboutUsPageBackground {
+        background: none;
+        min-height: auto;
+    }
+
+    /*  */
+    /* Team */
+    /*  */
+
+    .teamPersonBox {
+        min-height:auto;
+        border:none;
+    }
+
+    .border-none {
+        border:none !important;
+    }
+
+    /*  */
+    /* Experience page */
+    /*  */
+
+    .experiencePageBackground {
+        background:none;
+    }
+
+    .experiencePageBackgroundBox{
+        min-height:622px;
+        color:#7E828A;
+        border-left:1px solid #fff;
+        font-size:1.2rem;
+        line-height: 2rem;
+    }
+    
+
+    .sliderNumber {
+        font-size:2rem;
+    }
+
+     /*  */
+    /* Contact */
+    /*  */
+
+    a.mailContact {
+        font-size:1.5rem;
+    }
+
+    .formBox{
+        box-shadow:none;
+    }
+
+
 }
 
 @media (max-width: 768px) {
