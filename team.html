@@ -12,10 +12,10 @@
     <div class="container-fluid">
         <div class="row px-5 d-flex m-0" id="top">
             <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-start">
-                <div class="sygnet">
+                <a href="index.html" class="sygnet">
                     <img src="img/sygnet.svg" class="img-fluid"/>
-                </div>
-                <div class="menuIcon d-lg-none">
+                </a>
+                <div class="menuIcon d-lg-none" onclick="openNav()">
                     <img src="img/menu.png" class="img-fluid" alt="">
                 </div>
             </div>
@@ -29,9 +29,50 @@
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </nav>    
-                
             </div>
         </div>
+
+        <!-- Navigation -->
+
+        <div class="row">
+            <div class="col-12">
+                <!-- The overlay -->
+                <div id="myNav" class="overlay d-flex flex-column align-items-end justify-content-between">
+                    <div class="row px-5 d-flex m-0" id="top">
+                        <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-end">
+                            <div class="menuIcon d-lg-none">
+                                <img src="img/close.png" class="img-fluid" onclick="closeNav()" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-5 d-flex m-0" id="top">
+                        <div class="col-12 p-0 col-lg-3 d-flex align-items-end justify-content-end">
+                            <div class="overlay-content">
+                                <a href="about.html">O Nas</a>
+                                <a href="offer.html">Oferta</a>
+                                <a href="team.html">Zespół</a>
+                                <a href="experience.html">Doświadczenie</a>
+                                <a href="contact.html">Kontakt</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-5 d-flex m-0 mb-5" id="top">
+                        <div class="col-12 p-0 col-lg-3 d-flex align-items-end justify-content-end">
+                            <div class="overlay-content">
+                                <a href="#" class="politykaPrywatnosci">
+                                    Polityka Prywatności
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
         <div class="row px-lg-5 m-0">
             <div class="col-12 p-0">
                 <div class="h-100">
@@ -139,6 +180,7 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="script/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="script/acbc18888d.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

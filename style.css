@@ -274,6 +274,53 @@ nav li a:hover:after {
     width: 0;
 }
 
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100vh;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: #3266cc; /* Black fallback color */
+    overflow: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    text-align: right; /* Centered text/links */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #AEC9FF;
+    text-transform: uppercase;
+    font-family:"Futura-Bol" !important;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a.politykaPrywatnosci {
+    color:#000;
+    text-decoration: underline;
+    font-size:1.2rem;
+    text-transform: none;
+    font-family:"Futura-Lig" !important;
+  }
+
+  
+
 .primaryBg {
     background-color: #3266cc !important;
 }
@@ -561,7 +608,7 @@ ul.offerList {
         font-size:1.2rem;
     }
 
-     /*  */
+    /*  */
     /* About us */
     /*  */
 
