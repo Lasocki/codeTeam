@@ -424,7 +424,9 @@ ul.offerList {
     }
 
     .bgLayerPage2 {
-        width:32%;
+        /* width:32%; */
+        width:45%;
+        margin-left:-1px;
         height: 100%;
         background: #3266cc;
         clip-path: polygon(100% 100%, 0% 100%, 0 0);
