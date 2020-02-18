@@ -34,6 +34,11 @@
          url('font/Futura-Bol.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     font-family: "Futura-Lig" !important;
 }
@@ -113,6 +118,16 @@ span.pageTxt {
     -moz-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
     box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
     text-transform: uppercase;
+    overflow: hidden;
+}
+
+.buttonRounded .bg-white:hover {
+    background: #000;
+}
+
+.buttonRounded:hover {
+    background:#2a59b5 !important;
+    color:white !important;
 }
 
 .btnTxt {
@@ -462,16 +477,38 @@ ul.offerList {
         height:4px;
         width:100%;
         background: #AEC9FF;
+        overflow: hidden;
+    }
+
+    .mySlides {
+        min-height:290px;
+        align-items:center;
     }
 
     .progressLine {
         height:4px;
-        width:30%;
-        background: #3266cc;
+        width:20%;
+        background: #AEC9FF;
+    }
+    .sliderNumber sup {
+        font-family:"Futura-Bol" !important;
+    }
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+        background-color: #3266cc;
     }
 
     .sliderNumber {
         font-size:2rem;
+    }
+
+    .rightArrow {
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .cursor {
+        cursor:pointer;
     }
 
      /*  */
@@ -673,4 +710,3 @@ ul.offerList {
 @media (max-width: 414px) {
     
 }
-
