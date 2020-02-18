@@ -73,6 +73,17 @@ span.pageTxt {
     min-height:130px;
 }
 
+.bgLeftHome {
+    background-color: #85a3e1;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
 .homeBackground {
     background: url('img/home.jpg') no-repeat center top;
     background-size: cover;
@@ -80,25 +91,28 @@ span.pageTxt {
 }
 
 .homeLogo {
-    width:50%;
+    width:422px;
+    margin-top:15%;
 }
 
+
 .homeBackgroundText {
-    width:70%;
+    width:59%;
+    z-index: 20;
     min-height:285px;
     background: #85a3e1;
-    margin-bottom:-50px;
+    /* margin-bottom:-335px; */
 }
 
 .homeBackgroundText h1 {
     color:#fff;
-    font-size:2rem;
+    font-size:2.2rem;
     font-family:"Futura-Med" !important;
     font-weight: 400;
 }
 
 .arrowDown {
-    width:12px;
+    width:16px;
 }
 
 .arrowRight {
@@ -114,20 +128,14 @@ span.pageTxt {
     font-family: "Futura-Med" !important;
     padding:15px 70px 15px 20px;
     color:#fff;
-    -webkit-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
-    -moz-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
-    box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
     text-transform: uppercase;
     overflow: hidden;
 }
 
-.buttonRounded .bg-white:hover {
-    background: #000;
-}
-
 .buttonRounded:hover {
-    background:#2a59b5 !important;
-    color:white !important;
+    -webkit-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    -moz-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
 }
 
 .btnTxt {
@@ -172,7 +180,7 @@ span.pageTxt {
     font-size:1.2rem;
     color:#7f8289;
 }
-/*  */
+/* Offer  */
 
 .bgLeftOffer {
     background-color: #3266cc;
@@ -253,6 +261,7 @@ nav {
 nav ul {
     margin-top: auto !important;
     margin-bottom: auto !important;
+    margin-right:-30px;
 }
 
 nav li {
@@ -267,10 +276,12 @@ nav li a {
     font-family: "Futura-Dem" !important;
     text-transform: uppercase;
     font-size: 16px;
+    transition: 0.5s;
 }
 nav li a:hover {
     color: #3266cc !important;
     text-decoration: none;
+    background: none;
 }
 nav li a span {
     width: 25px;
@@ -287,7 +298,11 @@ nav li a:hover:after {
     margin-left: -10px;
     position: absolute;
     width: 0;
+    animation:slide-in-top .4s ease-in-out both;
 }
+
+@keyframes slide-in-top{0%{transform:translateY(-53px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
 
 /* The Overlay (background) */
 .overlay {
@@ -559,6 +574,7 @@ ul.offerList {
     }
     
     .homeLogo {
+        margin-top:70%;
         width:70%;
     }
     
@@ -703,10 +719,27 @@ ul.offerList {
 
 }
 
+.img-fluid {
+    width:100%;
+    min-width:auto !important;
+}
+
 @media (max-width: 768px) {
     
 }
 
 @media (max-width: 414px) {
     
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1380px !important;
+    }
+}
+
+@media (min-width: 1850px) {
+    #stopkaMail {
+        margin-right:-168px;
+    }
 }
