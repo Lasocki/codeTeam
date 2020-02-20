@@ -41,6 +41,7 @@ html {
 
 body {
     font-family: "Futura-Lig" !important;
+    overflow-x:hidden;
 }
 
 b {
@@ -174,6 +175,7 @@ a.blackHoverShadow:hover {
 
 .dotsBg {
     right:0;
+    z-index:-1;
     margin-top:-250px;
 }
 
@@ -257,9 +259,6 @@ a.blackHoverShadow:hover {
     font-size:1.3rem;
 }
 
-.footerMail {
-    /* margin-right:-168px; */
-}
 
 /* Navigation */
 
@@ -277,7 +276,6 @@ nav ul {
 
 nav li {
     display: inline-block;
-    float: left;
     position: relative;
 }
 nav li a {
@@ -565,7 +563,6 @@ ul.offerList {
 }
 
 @media (max-width: 1024px) {
-
     h1.pageName {
         font-size:2.2rem;
         color:#3266cc;

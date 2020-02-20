@@ -103,7 +103,7 @@
 
 
 
-        <div class="d-none d-lg-block row px-lg-5 m-0 " style="margin-top:-415px !important;" id="homeBackground" data-aos="fade-right" data-aos-delay="450">
+        <div class="d-none d-lg-block row px-lg-5 m-0 " style="margin-top:-385px !important;" id="homeBackground" data-aos="fade-right" data-aos-delay="450">
             <div class="col-12 p-0 ">
                 <div class="bgLeftHome d-none d-lg-block"></div>
                <div class="container d-flex justify-content-center flex-column p-0">
@@ -193,14 +193,14 @@
                                 w budowaniu i maksymalizowaniu wartości przedsiębiorstw.
                             </span>
                         </div>
-                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0">
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button" data-aos="fade-up">
+                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0" data-aos="fade-up" data-aos-delay="200">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button" >
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
                                 <span class="btnTxt">Poznaj zespół</span>
                             </a>
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-3" href="experience.html" role="button" data-aos="fade-up" data-aos-delay="100">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-3" href="experience.html" role="button">
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-12 col-lg-5 d-flex flex-column justify-content-center mt-5 mt-lg-0">
                         <div class="row mx-0">
-                            <div class="col-12 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row " data-aos="fade-down">
+                            <div class="col-12 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row " data-aos="fade-down" data-aos-delay="200">
                                 <div class="d-flex justify-content-center flex-column mt-3 mt-lg-0">
                                     <span class="teamName bluePrimaryTxt">Jarosław Plisz</span>
                                     <span class="teamRole bluePrimaryTxt">Partner Zarządzający</span>
@@ -219,7 +219,7 @@
                                     <img src="img/plisz.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-12 mt-5 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row" data-aos="fade-up">
+                            <div class="col-12 mt-5 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row" data-aos="fade-up" data-aos-delay="300">
                                 <div class="d-flex justify-content-center flex-column mt-3 mt-lg-0">
                                     <span class="teamName bluePrimaryTxt">Wojciech Olszenka</span>
                                     <span class="teamRole bluePrimaryTxt">Partner Zarządzający</span>
@@ -289,14 +289,18 @@
         (function($) {
             $(window).scroll(function() {
             var heightDiv=$("#infoHome").height();
+            var szerokosc = $(window).width();
             console.log(scrollTop);
             var scrollTop = $(window).scrollTop();
                 if (scrollTop == 0) {
                 $("#infoHome").attr("style","margin-top:" +heightDiv+ "!important");  
                     } if(scrollTop <= heightDiv) {
-                        $("#infoHome").attr("style","margin-top:"+(-415+$(window).scrollTop())+"px !important");      
-                    } if(scrollTop <= 180) {
-                        $("#homeBackground").attr("style","margin-top:"+(-415+$(window).scrollTop())+"px !important");      
+                        $("#infoHome").attr("style","margin-top:"+(-385+$(window).scrollTop())+"px !important");      
+                    } if(scrollTop <= 150 &&  szerokosc > 1900) {
+                        $("#homeBackground").attr("style","margin-top:"+(-385+$(window).scrollTop())+"px !important");      
+                    }
+                    if(scrollTop <= 255 &&  szerokosc < 1900) {
+                        $("#homeBackground").attr("style","margin-top:"+(-470+$(window).scrollTop())+"px !important");      
                     }
             });
         })(jQuery);
