@@ -136,6 +136,20 @@ span.pageTxt {
     -webkit-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
     -moz-box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
     box-shadow: 0px 15px 15px -5px rgba(50,102,204,0.5);
+    text-decoration: none;
+    color:#fff;
+}
+
+a.bg-white:hover {
+    -webkit-box-shadow: 0px 15px 15px -5px rgba(38, 75, 150, 0.7);
+    -moz-box-shadow: 0px 15px 15px -5px rgba(38, 75, 150, 0.7);
+    box-shadow: 0px 15px 15px -5px rgba(38, 75, 150, 0.7);
+}
+
+a.blackHoverShadow:hover {
+    -webkit-box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.4);
 }
 
 .btnTxt {
@@ -155,10 +169,6 @@ span.pageTxt {
     color:#7f8289 !important;
 }
 
-.buttonRounded:hover {
-    text-decoration: none;
-    color:#fff;
-}
 
 /* Expierience */
 
@@ -174,6 +184,7 @@ span.pageTxt {
 
 .expIcon {
     width:80%;
+    z-index: 20;
 }
 
 .expierienceTxt {
@@ -488,6 +499,7 @@ ul.offerList {
 
     .experienceWatermark {
         right:0;
+        margin-right:4.5%;
     }
 
     .progressBox {
