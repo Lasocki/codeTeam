@@ -12,27 +12,29 @@
   </head>
   <body>
     <div class="container-fluid">
-        <div class="row px-5 d-lg-flex m-0 d-none" id="top">
-            <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-start">
-                <a href="index.html" class="sygnet" data-aos="fade-right" data-aos-delay="150">
-                    <img src="img/sygnet.svg" class="img-fluid"/>
-                </a>
-                <div class="menuIcon d-lg-none" onclick="openNav()">
-                    <img src="img/menu.png" class="img-fluid" alt="">
+        <nav style="min-height:130px;">
+            <div class="row px-5 d-lg-flex m-0 d-none w-100 bg-white" id="top">
+                <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-start">
+                    <a href="index.html" class="sygnet">
+                        <img src="img/sygnet.svg" class="img-fluid"/>
+                    </a>
+                    <div class="menuIcon d-lg-none" onclick="openNav()">
+                        <img src="img/menu.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-9 align-items-center justify-content-end p-0">
+                    <nav id="menu" class="d-flex justify-content-end">      
+                        <ul class="d-flex align-items-center">
+                            <li><a href="about.html">O Nas</a></li>
+                            <li><a href="offer.html">Oferta</a></li>
+                            <li><a href="team.html">Zespół</a></li>
+                            <li><a href="experience.html">Doświadczenie</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </nav>    
                 </div>
             </div>
-            <div class="d-none d-lg-flex col-lg-9 align-items-center justify-content-end p-0" data-aos="fade-down">
-                <nav id="menu" class="d-flex justify-content-end">      
-                    <ul class="d-flex align-items-center">
-                        <li><a href="about.html">O Nas</a></li>
-                        <li><a href="offer.html">Oferta</a></li>
-                        <li><a href="team.html">Zespół</a></li>
-                        <li><a href="experience.html">Doświadczenie</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
-                </nav>    
-            </div>
-        </div>
+        </nav>
 
         <!-- Navigation -->
 
@@ -92,7 +94,7 @@
                 </div>
                 <div class="homeBackground d-flex flex-column justify-content-start">
                     <div class="container">
-                        <div class="homeLogo d-flex" data-aos="fade-right" data-aos-delay="350">
+                        <div class="homeLogo d-flex" data-aos="fade-up">
                             <img src="img/logo_white.svg" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -103,12 +105,12 @@
 
 
 
-        <div class="d-none d-lg-block row px-lg-5 m-0 " style="margin-top:-385px !important;" id="homeBackground" data-aos="fade-right" data-aos-delay="450">
+        <div class="d-none d-lg-block row px-lg-5 m-0 " style="margin-top:-385px !important;" id="homeBackground">
             <div class="col-12 p-0 ">
                 <div class="bgLeftHome d-none d-lg-block"></div>
                <div class="container d-flex justify-content-center flex-column p-0">
                     <div class="d-none homeBackgroundText d-lg-flex align-items-center justify-content-between"  >
-                        <h1>
+                        <h1 data-aos="fade-up" data-aos-delay="150">
                             Specjalizujemy się w maksymalizowaniu<br>
                             i budowaniu wartości przedsiębiorstw
                         </h1>
@@ -167,13 +169,13 @@
         <div class="row my-5 my-lg-0 py-5 py-lg-0 px-5 m-0" id="experience">
             <div class="container d-flex expierienceSection">
                 <div class="col-12 col-lg-6 d-flex justify-content-center flex-column p-0">
-                    <div class="row mx-0" data-aos="fade-right">
+                    <div class="row mx-0" data-aos="fade-up">
                         <span class="expierienceTxt"><span class="bluePrimaryTxt">Wykorzystujemy zgromadzone przez kilkanaście lat doświadczenia</span><br>
                             w bezpośredniej współpracy z właścicielami oraz zarządami spółek<br>
                             w budowaniu i maksymalizowaniu wartości przedsiębiorstw.
                         </span>
                     </div>
-                    <div class="row mt-5 mx-0" data-aos="fade-up" >
+                    <div class="row mt-5 mx-0" data-aos="fade-up" data-aos-delay="100">
                         <a name=""  class="buttonRounded hvr-icon-wobble-horizontal  d-flex justify-content-lg-center justify-content-between" href="about.html" role="button">
                             <div class="arrowRight mr-lg-4">
                                 <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
@@ -182,7 +184,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center p-0" data-aos="fade-left">
+                <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center p-0" data-aos="fade-up" data-aos-delay="350">
                     <div class="expIcon">
                         <img src="img/rozbudowa.png" class="img-fluid" alt="">
                     </div>
@@ -194,17 +196,17 @@
             <img src="img/dots.png" class="img-fluid" alt="">
         </div>
 
-        <div class="row px-lg-5 offerSection m-0 " data-aos="fade-right">
+        <div class="row px-lg-5 offerSection m-0 ">
             <div class="col-12 p-0 ">
                 <div class="bgLeftOffer d-none d-lg-block" ></div>
                <div class="container offerBackground d-flex justify-content-center flex-column">
-                    <div class="row mt-5 mt-lg-0 pt-5 pt-lg-0 px-5 px-lg-0 mx-0" data-aos="fade-right" data-aos-delay="100">
+                    <div class="row mt-5 mt-lg-0 pt-5 pt-lg-0 px-5 px-lg-0 mx-0" data-aos="fade-up">
                         <span class="text-white expierienceTxt">Oferujemy wsparcie w zakresie budowania i wdrażania strategii rozwoju, zarówno w drodze wzrostu<br>
                             organicznego, jak i poprzez akwizycje. Pomagamy włascicelom i zarządom przedsiebiorstw w implementacji <br>
                             efektywnych procesów zarządzania ukierunkowanych wzrost wartości.
                         </span>
                     </div>
-                    <div class="row mt-5 mb-5 mb-lg-0 pb-5 pb-lg-0 px-5 px-lg-0 mx-0" data-aos="fade-up">
+                    <div class="row mt-5 mb-5 mb-lg-0 pb-5 pb-lg-0 px-5 px-lg-0 mx-0" data-aos="fade-up" data-aos-delay="100">
                         <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center bg-white bluePrimaryTxt" href="offer.html" role="button">
                             <div class="arrowRight mr-4">
                                 <img src="img/arrow_right.svg" class="img-fluid hvr-icon" alt="">
@@ -219,21 +221,22 @@
         
         <div class="container my-5 my-lg-0 py-5 py-lg-0 px-5 px-lg-0">
             <div class="row teamSection">
-                <div class="col-12 col-lg-7 d-flex justify-content-center flex-column" data-aos="fade-right">
-                        <div class="row mx-0">
-                            <span class="expierienceTxt">Wykorzystujemy zgromadzone przez kilkanaście lat doświadczenia<br>
-                                w bezpośredniej współpracy z właścicielami oraz zarządami spółek<br>
-                                w budowaniu i maksymalizowaniu wartości przedsiębiorstw.
+                <div class="col-12 col-lg-7 d-flex justify-content-center flex-column" >
+                        <div class="row mx-0" data-aos="fade-up">
+                            <span class="expierienceTxt">Członkowie zespołu łączą wieloletnie praktyczne doświadczenie w operacyjnym zarządzaniu<br>
+                                przedsiębiorstwami w roli członka zarządu z kompetencjami w zakresie realizacji inwestycji<br>
+                                kapitałowych, transakcji fuzji, przejęć i sprzedaży spółek oraz konsultingu nakierowanego <br>
+                                na wzrost wartości spółek.
                             </span>
                         </div>
-                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0" data-aos="fade-up" data-aos-delay="200">
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button" >
+                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button" data-aos="fade-up" data-aos-delay="100">
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
                                 <span class="btnTxt">Poznaj zespół</span>
                             </a>
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-3" href="experience.html" role="button">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-3" href="experience.html" role="button" data-aos="fade-up" data-aos-delay="200">
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
@@ -243,21 +246,21 @@
                     </div>
                     <div class="col-12 col-lg-5 d-flex flex-column justify-content-center mt-5 mt-lg-0">
                         <div class="row mx-0">
-                            <div class="col-12 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row " data-aos="fade-down" data-aos-delay="200">
+                            <div class="col-12 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row ">
                                 <div class="d-flex justify-content-center flex-column mt-3 mt-lg-0">
-                                    <span class="teamName bluePrimaryTxt">Jarosław Plisz</span>
-                                    <span class="teamRole bluePrimaryTxt">Partner Zarządzający</span>
+                                    <span class="teamName bluePrimaryTxt" data-aos="fade-up">Jarosław Plisz</span>
+                                    <span class="teamRole bluePrimaryTxt" data-aos="fade-up" data-aos-delay="100">Partner Zarządzający</span>
                                 </div>
-                                <div class="profilePhoto">
+                                <div class="profilePhoto" data-aos="fade-up" data-aos-delay="200">
                                     <img src="img/plisz.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-12 mt-5 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row" data-aos="fade-up" data-aos-delay="300">
+                            <div class="col-12 mt-5 d-flex justify-content-between align-items-lg-center p-0 flex-column-reverse flex-lg-row" >
                                 <div class="d-flex justify-content-center flex-column mt-3 mt-lg-0">
-                                    <span class="teamName bluePrimaryTxt">Wojciech Olszenka</span>
-                                    <span class="teamRole bluePrimaryTxt">Partner Zarządzający</span>
+                                    <span class="teamName bluePrimaryTxt" data-aos="fade-up">Wojciech Olszenka</span>
+                                    <span class="teamRole bluePrimaryTxt" data-aos="fade-up" data-aos-delay="100">Partner Zarządzający</span>
                                 </div>
-                                <div class="profilePhoto">
+                                <div class="profilePhoto" data-aos="fade-up" data-aos-delay="200">
                                     <img src="img/olszenka.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
@@ -265,14 +268,14 @@
                     </div>
             </div>
             <!-- Mobile only -->
-            <div class="row mt-3 pt-5 d-lg-none" data-aos="fade-up">
-                <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-lg-center justify-content-between" href="team.html" role="button">
+            <div class="row mt-3 pt-5 d-lg-none">
+                <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-lg-center justify-content-between" href="team.html" role="button" data-aos="fade-up">
                     <div class="arrowRight mr-lg-4">
                         <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                     </div>
                     <span class="btnTxt flex-grow-1 align-self-center text-center">Poznaj zespół</span>
                 </a>
-                <a name="" id="" class="buttonRounded mt-3 hvr-icon-wobble-horizontal d-flex justify-content-lg-center justify-content-between" href="experience.html" role="button">
+                <a name="" id="" class="buttonRounded mt-3 hvr-icon-wobble-horizontal d-flex justify-content-lg-center justify-content-between" href="experience.html" role="button" data-aos="fade-up" data-aos-delay="100">
                     <div class="arrowRight mr-lg-4">
                         <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                     </div>
@@ -286,12 +289,12 @@
             <div class="col-12 p-0">
                 <div class="stopka">
                     <div class="container d-lg-flex align-items-center justify-content-between p-0 d-none">
-                        <span data-aos="fade-right">
+                        <span>
                             <span class="footerCompany">Team Value Partners spółka z orgraniczoną odpowiedzialnością</span><br>
                             Zygmunta Krasińskiego 29/9, 40-019 Katowice, Polska<br>
                             KRS 00006788678 NIP 5252711594 REGON 367315883
                         </span>
-                        <div class="h-100 d-flex" id="stopkaMail" data-aos="fade-left">
+                        <div class="h-100 d-flex" id="stopkaMail">
                             <img src="img/stopka1.png" class="img-fluid" alt="" >
                             <div class="primaryBg d-flex justify-content-center align-items-center pt-5" >
                                 <a href="mailto:biuro@teamvalue.pl">biuro@teamvalue.pl</a>
