@@ -1,15 +1,23 @@
 
   AOS.init();
 
-  $(window).scroll(function(){
+ /* $(window).scroll(function(){
     if ($(window).scrollTop() >= 300) {
         $('#top').addClass('fixed-header');
     }
     else {
         $('#top').removeClass('fixed-header');
     }
-});
+});*/
 
+/* $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('#top').addClass('fixed-header');
+    }
+    else {
+        $('#top').removeClass('fixed-header');
+    }
+});*/
 
 /* Open when someone clicks on the span element */
 function openNav() {
