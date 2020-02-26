@@ -1,23 +1,48 @@
 
   AOS.init();
 
- /* $(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
-        $('#top').addClass('fixed-header');
+$(window).scroll(function(){
+    /*if ($(window).scrollTop() >= 150) {
+      $('#homeBackground').removeClass('fixed-boxHome');
     }
     else {
-        $('#top').removeClass('fixed-header');
+      $('#homeBackground').addClass('fixed-boxHome');
+    }*/
+    console.log($(window).scrollTop());
+    if(
+      $(window).scrollTop()  < $('#homeBackground').height()
+    )
+    {
+        $('#homeBackground').addClass('fixed-boxHome');
     }
-});*/
+    if(
+      $('#homeBackground').offset().top >= $('#homeBackgroundFull').height()
+    )
+    {
+        $('#homeBackground').removeClass('fixed-boxHome'); // restore when you scroll up
+        
+    }
 
-/* $(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
-        $('#top').addClass('fixed-header');
+
+    if(
+      $(window).scrollTop() < $('#infoHome').height()
+    )
+    {
+        $('#infoHome').addClass('fixed-boxHome');
     }
-    else {
-        $('#top').removeClass('fixed-header');
+    if(
+      $('#infoHome').offset().top >= $('#homeBackgroundFull').height()
+    )
+    {
+        $('#infoHome').removeClass('fixed-boxHome'); // restore when you scroll up
+        
     }
-});*/
+    
+});
+
+
+
+
 
 /* Open when someone clicks on the span element */
 function openNav() {
