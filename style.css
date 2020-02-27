@@ -85,7 +85,9 @@ span.pageTxt {
 }
 
 
-
+.marginTop {
+    margin-top:135px !important;
+}
 
 .homeBackground {
     background: url('img/home.jpg') no-repeat center top;
@@ -196,6 +198,10 @@ a.blackHoverShadow:hover {
 .expierienceTxt {
     font-size:1.2rem;
     color:#7f8289;
+}
+
+.expierienceTxtWidth {
+    width:60%;
 }
 /* Offer  */
 
@@ -385,6 +391,7 @@ nav li a.active:after {
     text-decoration: underline;
     font-size:1.2rem;
     text-transform: none;
+    white-space: nowrap;
     font-family:"Futura-Lig" !important;
   }
 
@@ -598,6 +605,10 @@ ul.offerList {
 }
 
 @media (max-width: 1024px) {
+    .marginTop {
+        margin-top:0px !important;
+    }
+
     h1.pageName {
         font-size:2.2rem;
         color:#3266cc;
@@ -647,6 +658,10 @@ ul.offerList {
     .expierienceSection {
         margin-top:50px;
         min-height: auto;
+    }
+
+    .expierienceTxtWidth {
+        width:100%;
     }
 
     .buttonRounded{
@@ -747,6 +762,7 @@ ul.offerList {
         line-height: 2rem;
     }
     
+    
 
     .sliderNumber {
         font-size:2rem;
@@ -818,5 +834,12 @@ ul.offerList {
     position: fixed;
     bottom:0;
     z-index:889;
+    width:100%;
+}
+
+.absolute-boxHome {
+    position: absolute;
+    bottom:0;
+    z-index:16;
     width:100%;
 }

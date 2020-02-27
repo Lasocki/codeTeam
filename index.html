@@ -105,7 +105,7 @@
 
 
 
-        <div class="d-none d-lg-block row px-lg-5 m-0 fixed-boxHome" id="homeBackground">
+        <div class="d-none d-lg-block row px-lg-5 m-0 absolute-boxHome" id="homeBackground">
             <div class="col-12 p-0 ">
                 <div class="bgLeftHome d-none d-lg-block"></div>
                <div class="container d-flex justify-content-center flex-column p-0">
@@ -170,8 +170,8 @@
             <div class="container d-flex expierienceSection">
                 <div class="col-12 col-lg-6 d-flex justify-content-center flex-column p-0">
                     <div class="row mx-0" data-aos="fade-up">
-                        <span class="expierienceTxt"><span class="bluePrimaryTxt">Wykorzystujemy zgromadzone przez kilkanaście lat doświadczenia</span><br>
-                            w bezpośredniej współpracy z właścicielami oraz zarządami spółek<br>
+                        <span class="expierienceTxt"><span class="bluePrimaryTxt">Wykorzystujemy zgromadzone przez kilkanaście lat doświadczenia</span>
+                            w bezpośredniej współpracy z właścicielami oraz zarządami spółek
                             w budowaniu i maksymalizowaniu wartości przedsiębiorstw.
                         </span>
                     </div>
@@ -201,8 +201,8 @@
                 <div class="bgLeftOffer d-none d-lg-block" ></div>
                <div class="container offerBackground d-flex justify-content-center flex-column px-lg-5 px-xl-0">
                     <div class="row mt-5 mt-lg-0 pt-5 pt-lg-0 px-5 px-lg-0 mx-0" data-aos="fade-up">
-                        <span class="text-white expierienceTxt">Oferujemy wsparcie w zakresie budowania i wdrażania strategii rozwoju, zarówno w drodze wzrostu<br>
-                            organicznego, jak i poprzez akwizycje. Pomagamy włascicelom i zarządom przedsiebiorstw w implementacji <br>
+                        <span class="text-white expierienceTxt expierienceTxtWidth">Oferujemy wsparcie w zakresie budowania i wdrażania strategii rozwoju, zarówno w drodze wzrostu
+                            organicznego, jak i poprzez akwizycje. Pomagamy włascicelom i zarządom przedsiebiorstw w implementacji
                             efektywnych procesów zarządzania ukierunkowanych wzrost wartości.
                         </span>
                     </div>
@@ -223,20 +223,20 @@
             <div class="row teamSection">
                 <div class="col-12 col-lg-7 d-flex justify-content-center flex-column" >
                         <div class="row mx-0" data-aos="fade-up">
-                            <span class="expierienceTxt">Członkowie zespołu łączą wieloletnie praktyczne doświadczenie w operacyjnym zarządzaniu<br>
-                                przedsiębiorstwami w roli członka zarządu z kompetencjami w zakresie realizacji inwestycji<br>
-                                kapitałowych, transakcji fuzji, przejęć i sprzedaży spółek oraz konsultingu nakierowanego <br>
+                            <span class="expierienceTxt">Członkowie zespołu łączą wieloletnie praktyczne doświadczenie w operacyjnym zarządzaniu
+                                przedsiębiorstwami w roli członka zarządu z kompetencjami w zakresie realizacji inwestycji
+                                kapitałowych, transakcji fuzji, przejęć i sprzedaży spółek oraz konsultingu nakierowanego 
                                 na wzrost wartości spółek.
                             </span>
                         </div>
-                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0">
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row mt-5 pt-5 d-none d-lg-flex mx-0" data-aos="fade-up" data-aos-delay="200">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center" href="team.html" role="button">
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
                                 <span class="btnTxt">Poznaj zespół</span>
                             </a>
-                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-xl-3" href="experience.html" role="button" data-aos="fade-up" data-aos-delay="200">
+                            <a name="" id="" class="buttonRounded hvr-icon-wobble-horizontal d-flex justify-content-center ml-xl-3" href="experience.html" role="button">
                                 <div class="arrowRight mr-4">
                                     <img src="img/arrow_right2.svg" class="img-fluid hvr-icon" alt="">
                                 </div>
@@ -303,7 +303,7 @@
                         </div>
                     </div>
                     <div class="container d-lg-none d-flex align-items-center justify-content-end py-5">
-                        <a href="mailto:biuro@teamvalue.pl">biuro@teamvalue.pl</a>
+                        <a href="mailto:biuro@teamvalue.pl" class="bluePrimaryTxt">biuro@teamvalue.pl</a>
                     </div>
                 </div>
                 
@@ -322,25 +322,6 @@
     <script src="script/acbc18888d.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script type="application/javascript">
-        (function($) {
-            $(window).scroll(function() {
-            var heightDiv=$("#infoHome").height();
-            var szerokosc = $(window).width();
-            console.log(scrollTop);
-            var scrollTop = $(window).scrollTop();
-                if (scrollTop == 0) {
-                $("#infoHome").attr("style","margin-top:" +heightDiv+ "!important");  
-                    } if(scrollTop <= heightDiv) {
-                        $("#infoHome").attr("style","margin-top:"+(-385+$(window).scrollTop())+"px !important");      
-                    } if(scrollTop <= 150 &&  szerokosc > 1900) {
-                        $("#homeBackground").attr("style","margin-top:"+(-385+$(window).scrollTop())+"px !important");      
-                    }
-                    if(scrollTop <= 255 &&  szerokosc < 1900) {
-                        $("#homeBackground").attr("style","margin-top:"+(-470+$(window).scrollTop())+"px !important");      
-                    }
-            });
-        })(jQuery);
-    </script> -->
+    
 </body>
 </html>

@@ -4,6 +4,10 @@
 $(document).ready(function(){    
   //var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
   console.log($('.homeBackground').height() - $('#homeBackground').offset().top+135);
+  
+  var logoHomePosition = $(window).height()-$('#homeBackground').height();
+  console.log(logoHomePosition);
+  $('#homeBackground').css('top',logoHomePosition);
 });
 
 $(window).scroll(function(){
@@ -12,7 +16,7 @@ $(window).scroll(function(){
     }
     else {
       $('#homeBackground').addClass('fixed-boxHome');
-    }*/
+    }
     if(
       $(window).scrollTop()  < $('#homeBackground').height()+135
     )
@@ -25,7 +29,7 @@ $(window).scroll(function(){
     {
         $('#homeBackground').removeClass('fixed-boxHome'); // restore when you scroll up
         
-    }
+    }*/
 
 
     if(
@@ -41,8 +45,7 @@ $(window).scroll(function(){
         $('#infoHome').removeClass('fixed-boxHome'); // restore when you scroll up
         
     }
-    //var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
-    //$('#logoHomePosition').css('height',logoHomePosition);
+
 });
 
 
