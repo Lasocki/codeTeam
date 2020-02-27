@@ -91,7 +91,9 @@ span.pageTxt {
     background: url('img/home.jpg') no-repeat center top;
     background-size: cover;
     min-height: 950px;
+    margin-top:135px !important;
 }
+
 
 .homeLogo {
     width:422px;
@@ -311,6 +313,28 @@ nav li a:hover:after {
     width: 0;
     animation:slide-in-top .4s ease-in-out both;
 }
+
+nav li a.active {
+    color: #3266cc !important;
+    text-decoration: none;
+    background: none;
+}
+
+nav li a.active:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #85a3df 10px;
+    top: -53px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    width: 0;
+    animation:slide-in-top .4s ease-in-out both;
+}
+
+
 
 @keyframes slide-in-top{0%{transform:translateY(-53px);opacity:0}100%{transform:translateY(0);opacity:1}}
 @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
@@ -565,7 +589,12 @@ ul.offerList {
     }
     
 @media (max-width: 1366px) {
-    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1040px !important;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -588,8 +617,11 @@ ul.offerList {
         background: url('img/home.jpg') no-repeat center top;
         background-size: cover;
         min-height: 100vh;
+        margin-top:0 !important;
     }
     
+    
+
     .homeLogo {
         margin-top:70%;
         width:70%;
@@ -731,7 +763,11 @@ ul.offerList {
     .formBox{
         box-shadow:none;
     }
-
+    .fixed-header {
+        position: relative !important;
+        padding:0 !important;
+    }
+    
 
 }
 

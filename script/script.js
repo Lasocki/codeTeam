@@ -1,5 +1,10 @@
 
   AOS.init();
+//var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
+$(document).ready(function(){    
+  //var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
+  console.log($('.homeBackground').height() - $('#homeBackground').offset().top+135);
+});
 
 $(window).scroll(function(){
     /*if ($(window).scrollTop() >= 150) {
@@ -8,9 +13,8 @@ $(window).scroll(function(){
     else {
       $('#homeBackground').addClass('fixed-boxHome');
     }*/
-    console.log($(window).scrollTop());
     if(
-      $(window).scrollTop()  < $('#homeBackground').height()
+      $(window).scrollTop()  < $('#homeBackground').height()+135
     )
     {
         $('#homeBackground').addClass('fixed-boxHome');
@@ -37,7 +41,8 @@ $(window).scroll(function(){
         $('#infoHome').removeClass('fixed-boxHome'); // restore when you scroll up
         
     }
-    
+    //var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
+    //$('#logoHomePosition').css('height',logoHomePosition);
 });
 
 

@@ -12,27 +12,29 @@
   </head>
   <body>
     <div class="container-fluid">
-        <div class="row px-5 d-flex m-0" id="top">
-            <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-start">
-                <a href="index.html" class="sygnet">
-                    <img src="img/sygnet.svg" class="img-fluid"/>
-                </a>
-                <div class="menuIcon d-lg-none" onclick="openNav()">
-                    <img src="img/menu.png" class="img-fluid" alt="">
+        <nav class="d-lg-block fixed-header" style="height:130px;">
+            <div class="row px-5 d-flex m-0 w-100" id="top">
+                <div class="col-12 p-0 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-start">
+                    <a href="index.html" class="sygnet">
+                        <img src="img/sygnet.svg" class="img-fluid"/>
+                    </a>
+                    <div class="menuIcon d-lg-none" onclick="openNav()">
+                        <img src="img/menu.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-9 align-items-center justify-content-end p-0">
+                    <nav id="menu" class="d-flex justify-content-end">      
+                        <ul class="d-flex align-items-center">
+                            <li><a href="about.html">O Nas</a></li>
+                            <li><a href="offer.html">Oferta</a></li>
+                            <li><a href="team.html" class="active">Zespół</a></li>
+                            <li><a href="experience.html">Doświadczenie</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </nav>    
                 </div>
             </div>
-            <div class="d-none d-lg-flex col-lg-9 align-items-center justify-content-end p-0">
-                <nav id="menu" class="d-flex justify-content-end">      
-                    <ul class="d-flex align-items-center">
-                        <li><a href="about.html">O Nas</a></li>
-                        <li><a href="offer.html">Oferta</a></li>
-                        <li><a href="team.html">Zespół</a></li>
-                        <li><a href="experience.html">Doświadczenie</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
-                </nav>    
-            </div>
-        </div>
+        </nav>
 
         <!-- Navigation -->
 
@@ -75,7 +77,7 @@
         </div>
 
         <!--  -->
-        <div class="row px-lg-5 m-0">
+        <div class="row px-lg-5 mx-0 marginTop">
             <div class="col-12 p-0">
                 <div class="h-100">
                     <div class="container d-flex flex-column justify-content-between h-100 p-0">
