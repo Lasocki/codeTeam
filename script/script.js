@@ -91,8 +91,8 @@ function openNav() {
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
-        titles[i].className = "mt-5 d-none d-lg-none myTitles";
-        titlesMobile[i].className = "mt-5 text-black myMobileTitles d-none"; 
+        titles[i].className = "mt-5 d-none d-lg-none myTitles experienceCategory animated fadeIn";
+        titlesMobile[i].className = "mt-lg-5 text-black myMobileTitles d-none  animated fadeIn"; 
  
         console.log(titlesMobile[i]);
     }
@@ -102,8 +102,8 @@ function openNav() {
       }
       document.getElementById("currentSlide").innerHTML = slideIndex;
     slides[slideIndex-1].style.display = "flex";
-    titles[slideIndex-1].className = "mt-5 d-none d-lg-block myTitles"; 
-    titlesMobile[slideIndex-1].className = "mt-5 text-black myMobileTitles "; 
+    titles[slideIndex-1].className = "mt-5 d-none d-lg-block myTitles experienceCategory animated fadeIn"; 
+    titlesMobile[slideIndex-1].className = "mt-lg-5 text-black myMobileTitles  animated fadeIn"; 
 
     dots[slideIndex-1].className += " active animated fadeInUp faster";
     dots[slideIndex-2].className += " animated fadeOutUp";  

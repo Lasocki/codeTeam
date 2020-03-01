@@ -52,6 +52,12 @@ b {
 h1.pageName {
     font-size:2.2rem;
     font-family:"Futura-Dem"!important;
+    margin-top:2.5rem;
+}
+
+h2.experienceCategory {
+    font-size:1.6rem !important;
+    font-family:"Futura-Dem"!important;
 }
 
 h2 {
@@ -204,6 +210,13 @@ a.blackHoverShadow:hover {
     width:60%;
 }
 /* Offer  */
+.offerMainTextWidth {
+   width:60%;
+}
+
+.offerBoxTextWidth {
+    width:75%;
+}
 
 .bgLeftOffer {
     background-color: #3266cc;
@@ -223,6 +236,14 @@ a.blackHoverShadow:hover {
     background-size: 100%;
     min-height: 480px;
     z-index:2;
+}
+
+.bgOpacityBlack {
+    position: absolute;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
 }
 
 /* Team */
@@ -340,7 +361,25 @@ nav li a.active:after {
     animation:slide-in-top .4s ease-in-out both;
 }
 
+.current_page_item {
+    color: #3266cc !important;
+    text-decoration: none;
+    background: none;
+}
 
+.current_page_item:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #85a3df 10px;
+    top: -53px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    width: 0;
+    animation:slide-in-top .4s ease-in-out both;
+}
 
 @keyframes slide-in-top{0%{transform:translateY(-53px);opacity:0}100%{transform:translateY(0);opacity:1}}
 @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
@@ -434,6 +473,12 @@ h1.categoryOffer {
     color:#A5A9B1;
 }
 
+h1.cellpicExperience {
+    font-size:2rem;
+    color:#A5A9B1;
+    font-weight:700;
+}
+
 span.categoryTxt {
     font-size:1.2rem;
 }
@@ -524,7 +569,7 @@ ul.offerList {
     }
 
     .experiencePageBackgroundBox{
-        min-height:622px;
+        min-height:558px;
         color:#7E828A;
         border-left:1px solid #fff;
         font-size:1.2rem;
@@ -534,7 +579,9 @@ ul.offerList {
 
     .experienceWatermark {
         right:0;
+        z-index: -1;
         margin-right:4.5%;
+        margin-top:-4rem;
     }
 
     .progressBox {
@@ -546,7 +593,7 @@ ul.offerList {
 
     .mySlides {
         min-height:290px;
-        align-items:center;
+        align-items:start;
     }
 
     .progressLine {
@@ -566,9 +613,29 @@ ul.offerList {
         font-size:2rem;
     }
 
-    .rightArrow {
+    .leftArrow {
+        background: #fff url('img/left.png') no-repeat;
+        width:40px;
+        height:40px;
+        transition: .3s;
         animation-duration: 5s;
         animation-iteration-count: infinite;
+    }
+
+    .leftArrow:hover {
+        background: #fff url('img/hover_left.svg') no-repeat;
+    }
+
+    .rightArrow {
+        background: #fff url('img/right.png') no-repeat;
+        width:40px;
+        height:40px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .rightArrow:hover {
+        background: #fff url('img/hover_right.svg') no-repeat;
     }
 
     .cursor {
@@ -592,7 +659,27 @@ ul.offerList {
     .formBox {
         background:#fff;
         width:100%;
-        box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+        min-height:500px;
+        padding:2.6rem 3rem;
+        box-shadow:0 22px 50px rgba(51, 102, 204, 0.1);
+    }
+
+    .contactInput {
+        height:45px;
+        width:100%;
+        background:#fff;
+        border:1px solid #DADADA;
+        color:#A5A9B1;
+        padding:.3rem 1rem 0 1rem;
+    }
+
+    .shadowMobile {
+        position:absolute;
+        background: url('img/shadowContact.png') repeat-x;
+        height:45px;
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
     }
     
 @media (max-width: 1366px) {
@@ -663,6 +750,12 @@ ul.offerList {
     .expierienceTxtWidth {
         width:100%;
     }
+
+    .offerMainTextWidth, .offerBoxTextWidth {
+        width:auto;
+    }
+
+    
 
     .buttonRounded{
         width:100%;
@@ -778,13 +871,14 @@ ul.offerList {
 
     .formBox{
         box-shadow:none;
+        padding:0;
     }
     .fixed-header {
         position: relative !important;
         padding:0 !important;
     }
     
-
+    
 }
 
 .img-fluid {
