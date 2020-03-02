@@ -1,11 +1,16 @@
 
   AOS.init();
-//var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
 $(document).ready(function(){    
   //var logoHomePosition = $('.homeBackground').height() - $('#homeBackground').offset().top+135;
-  console.log($('.homeBackground').height() - $('#homeBackground').offset().top+135);
+
+
   
-  var logoHomePosition = $(window).height()-$('#homeBackground').height();
+    $('.bgLeftHome').css('width',$('.homeBackgroundText').offset().left-$('.bgLeftHome').offset().left)
+    $('#logoHomePosition').css('height',$('#homeBackground').offset().top-130);
+  
+  //$('#logoHomePosition').css('height',$('#infoHome').offset().top);
+
+  var logoHomePosition = $(window).height()-$('#homeBackground').height()+30;
   console.log(logoHomePosition);
   $('#homeBackground').css('top',logoHomePosition);
 });

@@ -83,7 +83,7 @@ span.pageTxt {
 }
 
 .bgLeftHome {
-    background-color: #85a3e1;
+    background-color: rgba(133, 164, 225, 1);
     height: 100%;
     width: 50%;
     position: absolute;
@@ -98,14 +98,16 @@ span.pageTxt {
 .homeBackground {
     background: url('img/home.jpg') no-repeat center top;
     background-size: cover;
-    min-height: 950px;
+    /* min-height: 950px; */
+    /* min-height:840px; */
+    min-height:87vh;
     margin-top:130px !important;
 }
 
 
 .homeLogo {
     width:422px;
-    margin-top:15%;
+    /* margin-top:15%; */
 }
 
 
@@ -113,15 +115,18 @@ span.pageTxt {
     width:59%;
     z-index: 20;
     min-height:285px;
-    background: #85a3e1;
+    background: rgba(133, 164, 225, 1);
+    /* background: #85a3e1; */
     /* margin-bottom:-335px; */
 }
 
 .homeBackgroundText h1 {
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-family: "Futura-Lig" !important;
     font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
 }
 
 .arrowDown {
@@ -289,8 +294,13 @@ a.blackHoverShadow:hover {
 .stopka a {
     color:#fff;
     font-size:1.3rem;
+    transition: .5s;
 }
 
+.stopka a:hover{
+    color:#99bbff;
+    text-decoration: none;;
+}
 
 /* Navigation */
 
@@ -448,7 +458,7 @@ nav li a.active:after {
 .offerPageBackground {
     background: url('img/oferta.jpg') no-repeat center top;
     background-size: cover;
-    min-height: 950px;
+    min-height: 87vh;
     color:#fff;
 }
 
@@ -722,7 +732,7 @@ ul.offerList {
     
 
     .homeLogo {
-        margin-top:70%;
+        /* margin-top:70%; */
         width:70%;
     }
     
@@ -732,11 +742,15 @@ ul.offerList {
         background: #85a3e1;
     }
     
+    #logoHomePosition {
+        height:350px !important;
+    }
+
     .homeBackgroundText h1 {
         color:#fff;
-        font-size:2rem;
-        font-family:"Futura-Med" !important;
-        font-weight: 400;
+        font-size:1.8rem;
+        font-family: "Futura-Lig" !important;
+    font-weight: 700;
     }
     
     .arrowDown {
@@ -898,11 +912,11 @@ ul.offerList {
 }
 
 
-/* @media (min-width: 1680px) {
+ @media (min-width: 1680px) {
     .container {
         max-width: 1380px !important;
     }
-} */
+} 
 
 /* @media (min-width: 1200px) {
     .container {
