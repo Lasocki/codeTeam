@@ -92,14 +92,14 @@ span.pageTxt {
 
 
 .marginTop {
-    margin-top:135px !important;
+    margin-top:130px !important;
 }
 
 .homeBackground {
     background: url('img/home.jpg') no-repeat center top;
     background-size: cover;
     min-height: 950px;
-    margin-top:135px !important;
+    margin-top:130px !important;
 }
 
 
@@ -118,14 +118,14 @@ span.pageTxt {
 }
 
 .homeBackgroundText h1 {
-    color:#fff;
-    font-size:2.2rem;
-    font-family:"Futura-Med" !important;
-    font-weight: 400;
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: "Futura-Lig" !important;
+    font-weight: 700;
 }
 
 .arrowDown {
-    width:16px;
+    width:24px;
 }
 
 .arrowRight {
@@ -141,6 +141,7 @@ span.pageTxt {
     font-family: "Futura-Med" !important;
     padding:15px 70px 15px 20px;
     color:#fff;
+    width:268px;
     text-transform: uppercase;
     overflow: hidden;
 }
@@ -897,11 +898,11 @@ ul.offerList {
 }
 
 
-@media (min-width: 1680px) {
+/* @media (min-width: 1680px) {
     .container {
         max-width: 1380px !important;
     }
-}
+} */
 
 /* @media (min-width: 1200px) {
     .container {
